@@ -53,8 +53,8 @@
             this.txtMagnitud2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.v1 = new System.Windows.Forms.TextBox();
+            this.v2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // pnVectorContenedor
@@ -173,7 +173,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(796, 129);
+            this.label2.Location = new System.Drawing.Point(796, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 25;
@@ -183,7 +183,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(796, 87);
+            this.label1.Location = new System.Drawing.Point(796, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 24;
@@ -197,10 +197,11 @@
             this.button2.TabIndex = 23;
             this.button2.Text = "Reiniciar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(870, 122);
+            this.txtDireccion.Location = new System.Drawing.Point(870, 79);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(100, 20);
             this.txtDireccion.TabIndex = 22;
@@ -208,7 +209,7 @@
             // 
             // txtMagnitud
             // 
-            this.txtMagnitud.Location = new System.Drawing.Point(870, 85);
+            this.txtMagnitud.Location = new System.Drawing.Point(870, 42);
             this.txtMagnitud.Name = "txtMagnitud";
             this.txtMagnitud.Size = new System.Drawing.Size(100, 20);
             this.txtMagnitud.TabIndex = 21;
@@ -227,7 +228,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1022, 87);
+            this.label3.Location = new System.Drawing.Point(792, 185);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 29;
@@ -236,7 +237,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1022, 45);
+            this.label4.Location = new System.Drawing.Point(792, 148);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 13);
             this.label4.TabIndex = 28;
@@ -244,14 +245,14 @@
             // 
             // txtDireccion2
             // 
-            this.txtDireccion2.Location = new System.Drawing.Point(1100, 80);
+            this.txtDireccion2.Location = new System.Drawing.Point(870, 182);
             this.txtDireccion2.Name = "txtDireccion2";
             this.txtDireccion2.Size = new System.Drawing.Size(100, 20);
             this.txtDireccion2.TabIndex = 27;
             // 
             // txtMagnitud2
             // 
-            this.txtMagnitud2.Location = new System.Drawing.Point(1100, 42);
+            this.txtMagnitud2.Location = new System.Drawing.Point(870, 145);
             this.txtMagnitud2.Name = "txtMagnitud2";
             this.txtMagnitud2.Size = new System.Drawing.Size(100, 20);
             this.txtMagnitud2.TabIndex = 26;
@@ -269,34 +270,35 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(1022, 18);
+            this.label6.Location = new System.Drawing.Point(792, 121);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 13);
             this.label6.TabIndex = 31;
             this.label6.Text = "Vector 2";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // textBox1
+            // v1
             // 
-            this.textBox1.Location = new System.Drawing.Point(870, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 32;
+            this.v1.Location = new System.Drawing.Point(870, 18);
+            this.v1.Name = "v1";
+            this.v1.Size = new System.Drawing.Size(131, 20);
+            this.v1.TabIndex = 32;
+            this.v1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // v2
             // 
-            this.textBox2.Location = new System.Drawing.Point(870, 59);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 33;
+            this.v2.Location = new System.Drawing.Point(870, 121);
+            this.v2.Name = "v2";
+            this.v2.Size = new System.Drawing.Size(131, 20);
+            this.v2.TabIndex = 33;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1244, 515);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.v2);
+            this.Controls.Add(this.v1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -356,8 +358,8 @@
         private System.Windows.Forms.TextBox txtMagnitud2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox v1;
+        private System.Windows.Forms.TextBox v2;
     }
 }
 

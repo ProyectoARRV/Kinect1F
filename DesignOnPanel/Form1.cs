@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DesignOnPanel
@@ -64,17 +59,18 @@ namespace DesignOnPanel
             DibujaVector(ObtenerVectorActual(), graphics);
         }
 
-        private void DibujaVector(Vector vector, Graphics graphics)
+        public void DibujaVector(Vector vector, Graphics graphics)
         {
             Pen redPen = new Pen(Color.Red, 1);
 
-            var x1 = ObtenerValorEnX(vector.Punto1.X);
-            var y1 = ObtenerValorEnY(vector.Punto1.Y);
+            var x1 = ObtenerValorEnX(vector.Punto1.X/10);
+            var y1 = ObtenerValorEnY(vector.Punto1.Y/10);
 
-            var x2 = ObtenerValorEnX(vector.Punto2.X);
-            var y2 = ObtenerValorEnY(vector.Punto2.Y);
+            var x2 = ObtenerValorEnX(vector.Punto2.X/10);
+            var y2 = ObtenerValorEnY(vector.Punto2.Y/10);
 
             graphics.DrawLine(redPen, x1, y1, x2, y2);
+            
         }
 
         private float ObtenerValorEnX(float valor)
@@ -170,8 +166,32 @@ namespace DesignOnPanel
         private void button1_Click(object sender, EventArgs e)
         {
             Calcular();
+            TxtManoIzquierdaX.Text = "0";
+            TxtManoIzquierdaY.Text = "0";
+            TxtManoDerechaX.Text = "0";
+            TxtManoDerechaY.Text = "0";
+
 
         }
+       
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TxtManoIzquierdaX.Text = "";
+            TxtManoIzquierdaY.Text = "";
+            TxtManoDerechaX.Text = "";
+            TxtManoDerechaY.Text = "";
+            v1.Text = "";
+            txtMagnitud.Text = "";
+            txtDireccion.Text = "";
+            v2.Text = "";
+            txtMagnitud2.Text = "";
+            txtDireccion2.Text = "";
+            contador = 0;
+      
+        }
+
+        
+
         private void Calcular()
         {
             Vectores.Add(ObtenerVectorActual());
@@ -181,6 +201,9 @@ namespace DesignOnPanel
                 var izqy = float.Parse(TxtManoIzquierdaY.Text);//Direccion = Contangente (y2-y1)/(x2-x1)
                 var derx = float.Parse(TxtManoDerechaX.Text);
                 var dery = float.Parse(TxtManoDerechaY.Text);
+
+
+                v1.Text ="( "+izqX.ToString()+", "+izqy.ToString()+") "+ "( " + derx.ToString() + ", " + dery.ToString() + ")";
                 //Magnitud
                 var x = Math.Pow(derx - izqX, 2);
                 var y = Math.Pow(dery - izqy, 2);
@@ -197,6 +220,7 @@ namespace DesignOnPanel
                 var izqy = float.Parse(TxtManoIzquierdaY.Text);//Direccion = Contangente (y2-y1)/(x2-x1)
                 var derx = float.Parse(TxtManoDerechaX.Text);
                 var dery = float.Parse(TxtManoDerechaY.Text);
+                v2.Text = "( " + izqX.ToString() + ", " + izqy.ToString() + ") " + "( " + derx.ToString() + ", " + dery.ToString() + ")";
                 //Magnitud
                 var x = Math.Pow(derx - izqX, 2);
                 var y = Math.Pow(dery - izqy, 2);
@@ -211,6 +235,16 @@ namespace DesignOnPanel
         }
 
         private void txtDireccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }
