@@ -59,82 +59,82 @@
             // 
             // pnVectorContenedor
             // 
-            this.pnVectorContenedor.Location = new System.Drawing.Point(12, 27);
+            this.pnVectorContenedor.Location = new System.Drawing.Point(14, 31);
             this.pnVectorContenedor.Name = "pnVectorContenedor";
-            this.pnVectorContenedor.Size = new System.Drawing.Size(491, 369);
+            this.pnVectorContenedor.Size = new System.Drawing.Size(572, 426);
             this.pnVectorContenedor.TabIndex = 1;
             this.pnVectorContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnVectorContenedor_Paint);
             // 
             // TxtManoIzquierdaX
             // 
-            this.TxtManoIzquierdaX.Location = new System.Drawing.Point(662, 42);
+            this.TxtManoIzquierdaX.Location = new System.Drawing.Point(744, 49);
             this.TxtManoIzquierdaX.Name = "TxtManoIzquierdaX";
-            this.TxtManoIzquierdaX.Size = new System.Drawing.Size(100, 20);
+            this.TxtManoIzquierdaX.Size = new System.Drawing.Size(116, 22);
             this.TxtManoIzquierdaX.TabIndex = 2;
             this.TxtManoIzquierdaX.TextChanged += new System.EventHandler(this.TxtManoIzquierdaX_TextChanged);
             // 
             // lblManoIzquierdaX
             // 
             this.lblManoIzquierdaX.AutoSize = true;
-            this.lblManoIzquierdaX.Location = new System.Drawing.Point(546, 45);
+            this.lblManoIzquierdaX.Location = new System.Drawing.Point(609, 52);
             this.lblManoIzquierdaX.Name = "lblManoIzquierdaX";
-            this.lblManoIzquierdaX.Size = new System.Drawing.Size(93, 13);
+            this.lblManoIzquierdaX.Size = new System.Drawing.Size(109, 15);
             this.lblManoIzquierdaX.TabIndex = 3;
             this.lblManoIzquierdaX.Text = "Mano Izquierda X:";
             // 
             // lblManoIzquierdaY
             // 
             this.lblManoIzquierdaY.AutoSize = true;
-            this.lblManoIzquierdaY.Location = new System.Drawing.Point(546, 71);
+            this.lblManoIzquierdaY.Location = new System.Drawing.Point(609, 82);
             this.lblManoIzquierdaY.Name = "lblManoIzquierdaY";
-            this.lblManoIzquierdaY.Size = new System.Drawing.Size(93, 13);
+            this.lblManoIzquierdaY.Size = new System.Drawing.Size(107, 15);
             this.lblManoIzquierdaY.TabIndex = 5;
             this.lblManoIzquierdaY.Text = "Mano Izquierda Y:";
             // 
             // TxtManoIzquierdaY
             // 
-            this.TxtManoIzquierdaY.Location = new System.Drawing.Point(662, 68);
+            this.TxtManoIzquierdaY.Location = new System.Drawing.Point(744, 79);
             this.TxtManoIzquierdaY.Name = "TxtManoIzquierdaY";
-            this.TxtManoIzquierdaY.Size = new System.Drawing.Size(100, 20);
+            this.TxtManoIzquierdaY.Size = new System.Drawing.Size(116, 22);
             this.TxtManoIzquierdaY.TabIndex = 4;
             // 
             // lblManoDerechaX
             // 
             this.lblManoDerechaX.AutoSize = true;
-            this.lblManoDerechaX.Location = new System.Drawing.Point(546, 122);
+            this.lblManoDerechaX.Location = new System.Drawing.Point(609, 142);
             this.lblManoDerechaX.Name = "lblManoDerechaX";
-            this.lblManoDerechaX.Size = new System.Drawing.Size(91, 13);
+            this.lblManoDerechaX.Size = new System.Drawing.Size(103, 15);
             this.lblManoDerechaX.TabIndex = 7;
             this.lblManoDerechaX.Text = "Mano Derecha X:";
             // 
             // TxtManoDerechaX
             // 
-            this.TxtManoDerechaX.Location = new System.Drawing.Point(662, 119);
+            this.TxtManoDerechaX.Location = new System.Drawing.Point(744, 138);
             this.TxtManoDerechaX.Name = "TxtManoDerechaX";
-            this.TxtManoDerechaX.Size = new System.Drawing.Size(100, 20);
+            this.TxtManoDerechaX.Size = new System.Drawing.Size(116, 22);
             this.TxtManoDerechaX.TabIndex = 6;
             // 
             // lblManoDerechaY
             // 
             this.lblManoDerechaY.AutoSize = true;
-            this.lblManoDerechaY.Location = new System.Drawing.Point(546, 148);
+            this.lblManoDerechaY.Location = new System.Drawing.Point(609, 172);
             this.lblManoDerechaY.Name = "lblManoDerechaY";
-            this.lblManoDerechaY.Size = new System.Drawing.Size(91, 13);
+            this.lblManoDerechaY.Size = new System.Drawing.Size(101, 15);
             this.lblManoDerechaY.TabIndex = 9;
             this.lblManoDerechaY.Text = "Mano Derecha Y:";
             // 
             // TxtManoDerechaY
             // 
-            this.TxtManoDerechaY.Location = new System.Drawing.Point(662, 145);
+            this.TxtManoDerechaY.Location = new System.Drawing.Point(744, 168);
             this.TxtManoDerechaY.Name = "TxtManoDerechaY";
-            this.TxtManoDerechaY.Size = new System.Drawing.Size(100, 20);
+            this.TxtManoDerechaY.Size = new System.Drawing.Size(116, 22);
             this.TxtManoDerechaY.TabIndex = 8;
             // 
             // btnCrearVector
             // 
-            this.btnCrearVector.Location = new System.Drawing.Point(549, 186);
+            this.btnCrearVector.Location = new System.Drawing.Point(613, 215);
             this.btnCrearVector.Name = "btnCrearVector";
-            this.btnCrearVector.Size = new System.Drawing.Size(213, 23);
+            this.btnCrearVector.Size = new System.Drawing.Size(249, 27);
             this.btnCrearVector.TabIndex = 14;
             this.btnCrearVector.Text = "Crear Vector";
             this.btnCrearVector.UseVisualStyleBackColor = true;
@@ -142,9 +142,9 @@
             // 
             // btnGuardarVector
             // 
-            this.btnGuardarVector.Location = new System.Drawing.Point(549, 215);
+            this.btnGuardarVector.Location = new System.Drawing.Point(613, 250);
             this.btnGuardarVector.Name = "btnGuardarVector";
-            this.btnGuardarVector.Size = new System.Drawing.Size(213, 23);
+            this.btnGuardarVector.Size = new System.Drawing.Size(249, 27);
             this.btnGuardarVector.TabIndex = 15;
             this.btnGuardarVector.Text = "Guardar Vector";
             this.btnGuardarVector.UseVisualStyleBackColor = true;
@@ -153,9 +153,9 @@
             // Punto1
             // 
             this.Punto1.AutoSize = true;
-            this.Punto1.Location = new System.Drawing.Point(546, 18);
+            this.Punto1.Location = new System.Drawing.Point(609, 22);
             this.Punto1.Name = "Punto1";
-            this.Punto1.Size = new System.Drawing.Size(44, 13);
+            this.Punto1.Size = new System.Drawing.Size(50, 15);
             this.Punto1.TabIndex = 16;
             this.Punto1.Text = "Punto 1";
             this.Punto1.Click += new System.EventHandler(this.label1_Click);
@@ -163,9 +163,9 @@
             // Punto2
             // 
             this.Punto2.AutoSize = true;
-            this.Punto2.Location = new System.Drawing.Point(546, 99);
+            this.Punto2.Location = new System.Drawing.Point(609, 115);
             this.Punto2.Name = "Punto2";
-            this.Punto2.Size = new System.Drawing.Size(44, 13);
+            this.Punto2.Size = new System.Drawing.Size(50, 15);
             this.Punto2.TabIndex = 17;
             this.Punto2.Text = "Punto 2";
             this.Punto2.Click += new System.EventHandler(this.label1_Click_1);
@@ -173,9 +173,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(796, 86);
+            this.label2.Location = new System.Drawing.Point(908, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(61, 15);
             this.label2.TabIndex = 25;
             this.label2.Text = "Direccion";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -183,17 +183,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(796, 44);
+            this.label1.Location = new System.Drawing.Point(908, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.Size = new System.Drawing.Size(61, 15);
             this.label1.TabIndex = 24;
             this.label1.Text = "Magnitud";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(549, 273);
+            this.button2.Location = new System.Drawing.Point(613, 316);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 23);
+            this.button2.Size = new System.Drawing.Size(249, 27);
             this.button2.TabIndex = 23;
             this.button2.Text = "Reiniciar";
             this.button2.UseVisualStyleBackColor = true;
@@ -201,25 +201,25 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(870, 79);
+            this.txtDireccion.Location = new System.Drawing.Point(984, 80);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(100, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(116, 22);
             this.txtDireccion.TabIndex = 22;
             this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             // 
             // txtMagnitud
             // 
-            this.txtMagnitud.Location = new System.Drawing.Point(870, 42);
+            this.txtMagnitud.Location = new System.Drawing.Point(984, 52);
             this.txtMagnitud.Name = "txtMagnitud";
-            this.txtMagnitud.Size = new System.Drawing.Size(100, 20);
+            this.txtMagnitud.Size = new System.Drawing.Size(116, 22);
             this.txtMagnitud.TabIndex = 21;
             this.txtMagnitud.TextChanged += new System.EventHandler(this.txtMagnitud_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(549, 244);
+            this.button1.Location = new System.Drawing.Point(613, 283);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 23);
+            this.button1.Size = new System.Drawing.Size(249, 27);
             this.button1.TabIndex = 20;
             this.button1.Text = "Calcular";
             this.button1.UseVisualStyleBackColor = true;
@@ -228,75 +228,76 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(792, 185);
+            this.label3.Location = new System.Drawing.Point(908, 204);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.Size = new System.Drawing.Size(61, 15);
             this.label3.TabIndex = 29;
             this.label3.Text = "Direccion";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(792, 148);
+            this.label4.Location = new System.Drawing.Point(908, 176);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.Size = new System.Drawing.Size(61, 15);
             this.label4.TabIndex = 28;
             this.label4.Text = "Magnitud";
             // 
             // txtDireccion2
             // 
-            this.txtDireccion2.Location = new System.Drawing.Point(870, 182);
+            this.txtDireccion2.Location = new System.Drawing.Point(984, 197);
             this.txtDireccion2.Name = "txtDireccion2";
-            this.txtDireccion2.Size = new System.Drawing.Size(100, 20);
+            this.txtDireccion2.Size = new System.Drawing.Size(116, 22);
             this.txtDireccion2.TabIndex = 27;
             // 
             // txtMagnitud2
             // 
-            this.txtMagnitud2.Location = new System.Drawing.Point(870, 145);
+            this.txtMagnitud2.Location = new System.Drawing.Point(984, 169);
             this.txtMagnitud2.Name = "txtMagnitud2";
-            this.txtMagnitud2.Size = new System.Drawing.Size(100, 20);
+            this.txtMagnitud2.Size = new System.Drawing.Size(116, 22);
             this.txtMagnitud2.TabIndex = 26;
             this.txtMagnitud2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(796, 18);
+            this.label5.Location = new System.Drawing.Point(908, 23);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 13);
+            this.label5.Size = new System.Drawing.Size(52, 15);
             this.label5.TabIndex = 30;
             this.label5.Text = "Vector 1";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(792, 121);
+            this.label6.Location = new System.Drawing.Point(908, 138);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 13);
+            this.label6.Size = new System.Drawing.Size(52, 15);
             this.label6.TabIndex = 31;
             this.label6.Text = "Vector 2";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // v1
             // 
-            this.v1.Location = new System.Drawing.Point(870, 18);
+            this.v1.Location = new System.Drawing.Point(984, 19);
             this.v1.Name = "v1";
-            this.v1.Size = new System.Drawing.Size(131, 20);
+            this.v1.Size = new System.Drawing.Size(152, 22);
             this.v1.TabIndex = 32;
             this.v1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // v2
             // 
-            this.v2.Location = new System.Drawing.Point(870, 121);
+            this.v2.Location = new System.Drawing.Point(984, 135);
             this.v2.Name = "v2";
-            this.v2.Size = new System.Drawing.Size(131, 20);
+            this.v2.Size = new System.Drawing.Size(152, 22);
             this.v2.TabIndex = 33;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1244, 515);
+            this.ClientSize = new System.Drawing.Size(1203, 591);
             this.Controls.Add(this.v2);
             this.Controls.Add(this.v1);
             this.Controls.Add(this.label6);
@@ -324,8 +325,9 @@
             this.Controls.Add(this.lblManoIzquierdaX);
             this.Controls.Add(this.TxtManoIzquierdaX);
             this.Controls.Add(this.pnVectorContenedor);
+            this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Kinect-Vectores";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
