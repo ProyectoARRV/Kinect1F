@@ -55,6 +55,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.v1 = new System.Windows.Forms.TextBox();
             this.v2 = new System.Windows.Forms.TextBox();
+            this.Suma = new System.Windows.Forms.Button();
+            this.Resta = new System.Windows.Forms.Button();
+            this.componentesV1 = new System.Windows.Forms.Label();
+            this.Compov1 = new System.Windows.Forms.TextBox();
+            this.Compov2 = new System.Windows.Forms.TextBox();
+            this.compv2 = new System.Windows.Forms.Label();
+            this.txtSuma = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtResta = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // pnVectorContenedor
@@ -228,7 +238,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(908, 204);
+            this.label3.Location = new System.Drawing.Point(908, 219);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 15);
             this.label3.TabIndex = 29;
@@ -238,7 +248,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(908, 176);
+            this.label4.Location = new System.Drawing.Point(908, 191);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 15);
             this.label4.TabIndex = 28;
@@ -246,14 +256,14 @@
             // 
             // txtDireccion2
             // 
-            this.txtDireccion2.Location = new System.Drawing.Point(984, 197);
+            this.txtDireccion2.Location = new System.Drawing.Point(984, 212);
             this.txtDireccion2.Name = "txtDireccion2";
             this.txtDireccion2.Size = new System.Drawing.Size(116, 22);
             this.txtDireccion2.TabIndex = 27;
             // 
             // txtMagnitud2
             // 
-            this.txtMagnitud2.Location = new System.Drawing.Point(984, 169);
+            this.txtMagnitud2.Location = new System.Drawing.Point(984, 184);
             this.txtMagnitud2.Name = "txtMagnitud2";
             this.txtMagnitud2.Size = new System.Drawing.Size(116, 22);
             this.txtMagnitud2.TabIndex = 26;
@@ -271,7 +281,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(908, 138);
+            this.label6.Location = new System.Drawing.Point(908, 157);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 15);
             this.label6.TabIndex = 31;
@@ -288,16 +298,111 @@
             // 
             // v2
             // 
-            this.v2.Location = new System.Drawing.Point(984, 135);
+            this.v2.Location = new System.Drawing.Point(984, 150);
             this.v2.Name = "v2";
             this.v2.Size = new System.Drawing.Size(152, 22);
             this.v2.TabIndex = 33;
+            // 
+            // Suma
+            // 
+            this.Suma.Location = new System.Drawing.Point(613, 356);
+            this.Suma.Name = "Suma";
+            this.Suma.Size = new System.Drawing.Size(249, 27);
+            this.Suma.TabIndex = 34;
+            this.Suma.Text = "Calcular Suma";
+            this.Suma.UseVisualStyleBackColor = true;
+            this.Suma.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // Resta
+            // 
+            this.Resta.Location = new System.Drawing.Point(613, 391);
+            this.Resta.Name = "Resta";
+            this.Resta.Size = new System.Drawing.Size(249, 27);
+            this.Resta.TabIndex = 35;
+            this.Resta.Text = "Calcular Resta";
+            this.Resta.UseVisualStyleBackColor = true;
+            this.Resta.Click += new System.EventHandler(this.Resta_Click);
+            // 
+            // componentesV1
+            // 
+            this.componentesV1.AutoSize = true;
+            this.componentesV1.Location = new System.Drawing.Point(908, 111);
+            this.componentesV1.Name = "componentesV1";
+            this.componentesV1.Size = new System.Drawing.Size(99, 15);
+            this.componentesV1.TabIndex = 37;
+            this.componentesV1.Text = "Componentes V1";
+            // 
+            // Compov1
+            // 
+            this.Compov1.Location = new System.Drawing.Point(1020, 108);
+            this.Compov1.Name = "Compov1";
+            this.Compov1.Size = new System.Drawing.Size(116, 22);
+            this.Compov1.TabIndex = 38;
+            // 
+            // Compov2
+            // 
+            this.Compov2.Location = new System.Drawing.Point(1020, 240);
+            this.Compov2.Name = "Compov2";
+            this.Compov2.Size = new System.Drawing.Size(116, 22);
+            this.Compov2.TabIndex = 40;
+            // 
+            // compv2
+            // 
+            this.compv2.AutoSize = true;
+            this.compv2.Location = new System.Drawing.Point(907, 245);
+            this.compv2.Name = "compv2";
+            this.compv2.Size = new System.Drawing.Size(99, 15);
+            this.compv2.TabIndex = 39;
+            this.compv2.Text = "Componentes V2";
+            // 
+            // txtSuma
+            // 
+            this.txtSuma.Location = new System.Drawing.Point(1020, 292);
+            this.txtSuma.Name = "txtSuma";
+            this.txtSuma.Size = new System.Drawing.Size(116, 22);
+            this.txtSuma.TabIndex = 42;
+            this.txtSuma.TextChanged += new System.EventHandler(this.txtSuma_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(907, 295);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(101, 15);
+            this.label7.TabIndex = 41;
+            this.label7.Text = "Suma de vectores";
+            // 
+            // txtResta
+            // 
+            this.txtResta.Location = new System.Drawing.Point(1020, 321);
+            this.txtResta.Name = "txtResta";
+            this.txtResta.Size = new System.Drawing.Size(116, 22);
+            this.txtResta.TabIndex = 44;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(907, 324);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(101, 15);
+            this.label8.TabIndex = 43;
+            this.label8.Text = "Resta de vectores";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1203, 591);
+            this.ClientSize = new System.Drawing.Size(1203, 518);
+            this.Controls.Add(this.txtResta);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtSuma);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.Compov2);
+            this.Controls.Add(this.compv2);
+            this.Controls.Add(this.Compov1);
+            this.Controls.Add(this.componentesV1);
+            this.Controls.Add(this.Resta);
+            this.Controls.Add(this.Suma);
             this.Controls.Add(this.v2);
             this.Controls.Add(this.v1);
             this.Controls.Add(this.label6);
@@ -362,6 +467,16 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox v1;
         private System.Windows.Forms.TextBox v2;
+        private System.Windows.Forms.Button Suma;
+        private System.Windows.Forms.Button Resta;
+        private System.Windows.Forms.Label componentesV1;
+        private System.Windows.Forms.TextBox Compov1;
+        private System.Windows.Forms.TextBox Compov2;
+        private System.Windows.Forms.Label compv2;
+        private System.Windows.Forms.TextBox txtSuma;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtResta;
+        private System.Windows.Forms.Label label8;
     }
 }
 

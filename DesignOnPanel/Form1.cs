@@ -8,6 +8,10 @@ namespace DesignOnPanel
     public partial class Form1 : Form
     {
         private int contador = 0;
+        private float xv1;
+        private float yv1;
+        private float xv2;
+        private float yv2;
 
         public List<Vector> Vectores { get; }
         public int Contador { get; }
@@ -187,6 +191,10 @@ namespace DesignOnPanel
             txtMagnitud2.Text = "";
             txtDireccion2.Text = "";
             contador = 0;
+            Compov1.Text = "";
+            Compov2.Text = "";
+            txtSuma.Text = " ";
+            txtResta.Text = "";
       
         }
 
@@ -202,13 +210,20 @@ namespace DesignOnPanel
                 var derx = float.Parse(TxtManoDerechaX.Text);
                 var dery = float.Parse(TxtManoDerechaY.Text);
 
-
+                //Coordenadas del vector 1
                 v1.Text ="( "+izqX.ToString()+", "+izqy.ToString()+") "+ "( " + derx.ToString() + ", " + dery.ToString() + ")";
+
+                //Componentes del vector 1 AB=(X2- X1, Y2-Y1)
+                xv1 = derx - izqX;
+                yv1 = dery - izqy;
+                Compov1.Text="(" +xv1.ToString()+ ", "+ yv1.ToString()+")";
+
                 //Magnitud
                 var x = Math.Pow(derx - izqX, 2);
                 var y = Math.Pow(dery - izqy, 2);
                 var magnitud = Math.Sqrt(x + y);
                 txtMagnitud.Text = magnitud.ToString();
+
                 //Direccion
                 var x1 = derx - izqX;
                 var y1 = dery - izqy;
@@ -220,7 +235,14 @@ namespace DesignOnPanel
                 var izqy = float.Parse(TxtManoIzquierdaY.Text);//Direccion = Contangente (y2-y1)/(x2-x1)
                 var derx = float.Parse(TxtManoDerechaX.Text);
                 var dery = float.Parse(TxtManoDerechaY.Text);
+               //Coordenadas del vector 2
                 v2.Text = "( " + izqX.ToString() + ", " + izqy.ToString() + ") " + "( " + derx.ToString() + ", " + dery.ToString() + ")";
+
+                //Componentes del vector 2 AB=(X2- X1, Y2-Y1)
+                xv2 = derx - izqX;
+                yv2 = dery - izqy;
+                Compov2.Text = "(" + xv2.ToString() + ", " + yv2.ToString() + ")";
+
                 //Magnitud
                 var x = Math.Pow(derx - izqX, 2);
                 var y = Math.Pow(dery - izqy, 2);
@@ -232,6 +254,31 @@ namespace DesignOnPanel
                 double direccion = Math.Atan(y1 / x1) * 180 / Math.PI;
                 txtDireccion2.Text = direccion.ToString();
             }
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Suma de vectores formula: A + B = (Xv1 + Xv2, Yv1 + Yv2)
+            //xv1;
+            //yv1;
+            //xv2;
+            //yv2;
+            var x = xv1 + xv2;
+            var y = yv1 + yv2;
+            txtSuma.Text = "(" + x.ToString() + ", " + y.ToString() + ")";
+      
+
+        }
+        private void Resta_Click(object sender, EventArgs e)
+        {
+            //Resta de vectores formula: A - B = (Xv1 - Xv2, Yv1 - Yv2)
+            //xv1;
+            //yv1;
+            //xv2;
+            //yv2;
+            var x = xv1 - xv2;
+            var y = yv1 - yv2;
+            txtResta.Text = "(" + x.ToString() + ", " + y.ToString() + ")";
+
         }
 
         private void txtDireccion_TextChanged(object sender, EventArgs e)
@@ -252,6 +299,11 @@ namespace DesignOnPanel
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+        
+        private void txtSuma_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
