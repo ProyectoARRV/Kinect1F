@@ -56,7 +56,6 @@
             this.v1 = new System.Windows.Forms.TextBox();
             this.v2 = new System.Windows.Forms.TextBox();
             this.Suma = new System.Windows.Forms.Button();
-            this.Resta = new System.Windows.Forms.Button();
             this.componentesV1 = new System.Windows.Forms.Label();
             this.Compov1 = new System.Windows.Forms.TextBox();
             this.Compov2 = new System.Windows.Forms.TextBox();
@@ -65,8 +64,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtResta = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.ProducCruz = new System.Windows.Forms.Button();
-            this.ProducPunto = new System.Windows.Forms.Button();
             this.txtCruz = new System.Windows.Forms.TextBox();
             this.ProducC = new System.Windows.Forms.Label();
             this.txtPunto = new System.Windows.Forms.TextBox();
@@ -80,15 +77,12 @@
             this.txtV2Escalar = new System.Windows.Forms.TextBox();
             this.txtV1Escalar = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.Formulas = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pnVectorContenedor.SuspendLayout();
+            this.label14 = new System.Windows.Forms.Label();
+            this.formulas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pnVectorContenedor
             // 
-            this.pnVectorContenedor.Controls.Add(this.panel1);
             this.pnVectorContenedor.Location = new System.Drawing.Point(14, 31);
             this.pnVectorContenedor.Name = "pnVectorContenedor";
             this.pnVectorContenedor.Size = new System.Drawing.Size(572, 426);
@@ -221,7 +215,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(179, 470);
+            this.button2.Location = new System.Drawing.Point(179, 482);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(249, 27);
             this.button2.TabIndex = 23;
@@ -252,7 +246,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(249, 27);
             this.button1.TabIndex = 20;
-            this.button1.Text = "Calcular";
+            this.button1.Text = "Calcular Magnitud y Direccion";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -326,23 +320,13 @@
             // 
             // Suma
             // 
-            this.Suma.Location = new System.Drawing.Point(612, 307);
+            this.Suma.Location = new System.Drawing.Point(612, 316);
             this.Suma.Name = "Suma";
             this.Suma.Size = new System.Drawing.Size(249, 27);
             this.Suma.TabIndex = 34;
-            this.Suma.Text = "Calcular Suma";
+            this.Suma.Text = "Calcular Operaciones";
             this.Suma.UseVisualStyleBackColor = true;
             this.Suma.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // Resta
-            // 
-            this.Resta.Location = new System.Drawing.Point(611, 341);
-            this.Resta.Name = "Resta";
-            this.Resta.Size = new System.Drawing.Size(249, 27);
-            this.Resta.TabIndex = 35;
-            this.Resta.Text = "Calcular Resta";
-            this.Resta.UseVisualStyleBackColor = true;
-            this.Resta.Click += new System.EventHandler(this.Resta_Click);
             // 
             // componentesV1
             // 
@@ -378,7 +362,7 @@
             // 
             // txtSuma
             // 
-            this.txtSuma.Location = new System.Drawing.Point(1020, 292);
+            this.txtSuma.Location = new System.Drawing.Point(727, 360);
             this.txtSuma.Name = "txtSuma";
             this.txtSuma.Size = new System.Drawing.Size(116, 22);
             this.txtSuma.TabIndex = 42;
@@ -387,7 +371,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(907, 295);
+            this.label7.Location = new System.Drawing.Point(614, 363);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(101, 15);
             this.label7.TabIndex = 41;
@@ -395,7 +379,7 @@
             // 
             // txtResta
             // 
-            this.txtResta.Location = new System.Drawing.Point(1020, 321);
+            this.txtResta.Location = new System.Drawing.Point(727, 389);
             this.txtResta.Name = "txtResta";
             this.txtResta.Size = new System.Drawing.Size(116, 22);
             this.txtResta.TabIndex = 44;
@@ -404,34 +388,16 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(907, 324);
+            this.label8.Location = new System.Drawing.Point(614, 392);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(101, 15);
             this.label8.TabIndex = 43;
             this.label8.Text = "Resta de vectores";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // ProducCruz
-            // 
-            this.ProducCruz.Location = new System.Drawing.Point(611, 407);
-            this.ProducCruz.Name = "ProducCruz";
-            this.ProducCruz.Size = new System.Drawing.Size(249, 27);
-            this.ProducCruz.TabIndex = 46;
-            this.ProducCruz.Text = "Calcular Producto Cruz";
-            this.ProducCruz.UseVisualStyleBackColor = true;
-            // 
-            // ProducPunto
-            // 
-            this.ProducPunto.Location = new System.Drawing.Point(610, 374);
-            this.ProducPunto.Name = "ProducPunto";
-            this.ProducPunto.Size = new System.Drawing.Size(249, 27);
-            this.ProducPunto.TabIndex = 45;
-            this.ProducPunto.Text = "Calcular Producto Punto";
-            this.ProducPunto.UseVisualStyleBackColor = true;
-            // 
             // txtCruz
             // 
-            this.txtCruz.Location = new System.Drawing.Point(1020, 377);
+            this.txtCruz.Location = new System.Drawing.Point(727, 445);
             this.txtCruz.Name = "txtCruz";
             this.txtCruz.Size = new System.Drawing.Size(116, 22);
             this.txtCruz.TabIndex = 50;
@@ -439,7 +405,7 @@
             // ProducC
             // 
             this.ProducC.AutoSize = true;
-            this.ProducC.Location = new System.Drawing.Point(907, 380);
+            this.ProducC.Location = new System.Drawing.Point(614, 448);
             this.ProducC.Name = "ProducC";
             this.ProducC.Size = new System.Drawing.Size(87, 15);
             this.ProducC.TabIndex = 49;
@@ -447,7 +413,7 @@
             // 
             // txtPunto
             // 
-            this.txtPunto.Location = new System.Drawing.Point(1020, 349);
+            this.txtPunto.Location = new System.Drawing.Point(727, 417);
             this.txtPunto.Name = "txtPunto";
             this.txtPunto.Size = new System.Drawing.Size(116, 22);
             this.txtPunto.TabIndex = 48;
@@ -455,7 +421,7 @@
             // ProductoP
             // 
             this.ProductoP.AutoSize = true;
-            this.ProductoP.Location = new System.Drawing.Point(907, 352);
+            this.ProductoP.Location = new System.Drawing.Point(614, 420);
             this.ProductoP.Name = "ProductoP";
             this.ProductoP.Size = new System.Drawing.Size(94, 15);
             this.ProductoP.TabIndex = 47;
@@ -464,7 +430,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(893, 473);
+            this.label9.Location = new System.Drawing.Point(586, 541);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 15);
             this.label9.TabIndex = 51;
@@ -473,7 +439,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(893, 448);
+            this.label10.Location = new System.Drawing.Point(586, 516);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(100, 15);
             this.label10.TabIndex = 52;
@@ -483,7 +449,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(1053, 448);
+            this.label11.Location = new System.Drawing.Point(746, 516);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(16, 15);
             this.label11.TabIndex = 53;
@@ -492,7 +458,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(1053, 473);
+            this.label12.Location = new System.Drawing.Point(746, 541);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(16, 15);
             this.label12.TabIndex = 54;
@@ -500,28 +466,28 @@
             // 
             // txtEscalarv1
             // 
-            this.txtEscalarv1.Location = new System.Drawing.Point(997, 445);
+            this.txtEscalarv1.Location = new System.Drawing.Point(690, 513);
             this.txtEscalarv1.Name = "txtEscalarv1";
             this.txtEscalarv1.Size = new System.Drawing.Size(49, 22);
             this.txtEscalarv1.TabIndex = 55;
             // 
             // txtEscalarv2
             // 
-            this.txtEscalarv2.Location = new System.Drawing.Point(996, 473);
+            this.txtEscalarv2.Location = new System.Drawing.Point(689, 541);
             this.txtEscalarv2.Name = "txtEscalarv2";
             this.txtEscalarv2.Size = new System.Drawing.Size(49, 22);
             this.txtEscalarv2.TabIndex = 56;
             // 
             // txtV2Escalar
             // 
-            this.txtV2Escalar.Location = new System.Drawing.Point(1075, 473);
+            this.txtV2Escalar.Location = new System.Drawing.Point(768, 541);
             this.txtV2Escalar.Name = "txtV2Escalar";
             this.txtV2Escalar.Size = new System.Drawing.Size(116, 22);
             this.txtV2Escalar.TabIndex = 58;
             // 
             // txtV1Escalar
             // 
-            this.txtV1Escalar.Location = new System.Drawing.Point(1075, 445);
+            this.txtV1Escalar.Location = new System.Drawing.Point(768, 513);
             this.txtV1Escalar.Name = "txtV1Escalar";
             this.txtV1Escalar.Size = new System.Drawing.Size(116, 22);
             this.txtV1Escalar.TabIndex = 57;
@@ -529,51 +495,44 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(981, 414);
+            this.label13.Location = new System.Drawing.Point(674, 482);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(126, 15);
             this.label13.TabIndex = 59;
             this.label13.Text = "Producto Por Escalar";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
-            // button3
+            // label14
             // 
-            this.button3.Location = new System.Drawing.Point(612, 440);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(249, 27);
-            this.button3.TabIndex = 60;
-            this.button3.Text = "Calcular Producto Por Escalar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(1017, 278);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(59, 15);
+            this.label14.TabIndex = 62;
+            this.label14.Text = "Formulas";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // Formulas
+            // formulas
             // 
-            this.Formulas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Formulas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Formulas.Location = new System.Drawing.Point(611, 479);
-            this.Formulas.Name = "Formulas";
-            this.Formulas.Size = new System.Drawing.Size(249, 27);
-            this.Formulas.TabIndex = 61;
-            this.Formulas.Text = "Formulas";
-            this.Formulas.UseVisualStyleBackColor = true;
-            this.Formulas.Click += new System.EventHandler(this.Formulas_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::DesignOnPanel.Properties.Resources.carro2;
-            this.panel1.Location = new System.Drawing.Point(222, 119);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(350, 364);
-            this.panel1.TabIndex = 62;
-            this.panel1.Visible = false;
-            this.panel1.Click += new System.EventHandler(this.Formulas_Click);
+            this.formulas.BackgroundImage = global::DesignOnPanel.Properties.Resources.Imagen5;
+            this.formulas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.formulas.Cursor = System.Windows.Forms.Cursors.Default;
+            this.formulas.Enabled = false;
+            this.formulas.Location = new System.Drawing.Point(941, 296);
+            this.formulas.Name = "formulas";
+            this.formulas.Size = new System.Drawing.Size(222, 323);
+            this.formulas.TabIndex = 61;
+            this.formulas.Text = "\r\n";
+            this.formulas.UseVisualStyleBackColor = true;
+            this.formulas.Click += new System.EventHandler(this.Formulas_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1203, 518);
-            this.Controls.Add(this.Formulas);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(1203, 630);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.formulas);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtV2Escalar);
             this.Controls.Add(this.txtV1Escalar);
@@ -587,8 +546,6 @@
             this.Controls.Add(this.ProducC);
             this.Controls.Add(this.txtPunto);
             this.Controls.Add(this.ProductoP);
-            this.Controls.Add(this.ProducCruz);
-            this.Controls.Add(this.ProducPunto);
             this.Controls.Add(this.txtResta);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtSuma);
@@ -597,7 +554,6 @@
             this.Controls.Add(this.compv2);
             this.Controls.Add(this.Compov1);
             this.Controls.Add(this.componentesV1);
-            this.Controls.Add(this.Resta);
             this.Controls.Add(this.Suma);
             this.Controls.Add(this.v2);
             this.Controls.Add(this.v1);
@@ -630,7 +586,6 @@
             this.Name = "Form1";
             this.Text = "Kinect-Vectores";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.pnVectorContenedor.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -665,7 +620,6 @@
         private System.Windows.Forms.TextBox v1;
         private System.Windows.Forms.TextBox v2;
         private System.Windows.Forms.Button Suma;
-        private System.Windows.Forms.Button Resta;
         private System.Windows.Forms.Label componentesV1;
         private System.Windows.Forms.TextBox Compov1;
         private System.Windows.Forms.TextBox Compov2;
@@ -674,8 +628,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtResta;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button ProducCruz;
-        private System.Windows.Forms.Button ProducPunto;
         private System.Windows.Forms.TextBox txtCruz;
         private System.Windows.Forms.Label ProducC;
         private System.Windows.Forms.TextBox txtPunto;
@@ -689,9 +641,8 @@
         private System.Windows.Forms.TextBox txtV2Escalar;
         private System.Windows.Forms.TextBox txtV1Escalar;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button Formulas;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button formulas;
+        private System.Windows.Forms.Label label14;
     }
 }
 

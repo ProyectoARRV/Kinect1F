@@ -80,19 +80,7 @@ namespace DesignOnPanel
             
         }
 
-        public void borrarVector(Vector vector, Graphics graphics)
-        {​​​​​
-            Pen redPen = new Pen(Color.White, 1);
-
-            var x1 = ObtenerValorEnX(vector.Punto1.X / 10);
-            var y1 = ObtenerValorEnY(vector.Punto1.Y / 10);
-
-            var x2 = ObtenerValorEnX(vector.Punto2.X / 10);
-            var y2 = ObtenerValorEnY(vector.Punto2.Y / 10);
-
-            graphics.DrawLine(redPen, x1, y1, x2, y2);
-
-        }​​​​​
+        
 
         private float ObtenerValorEnX(float valor)
         {
@@ -213,11 +201,7 @@ namespace DesignOnPanel
             Compov2.Text = "";
             txtSuma.Text = " ";
             txtResta.Text = "";
-            foreach (var vector in Vectores)
-            {​​​​​
-                borrarVector(vector, graphics);
-            }​​​​​
-            Vectores.Clear();
+            
 
 
         }
@@ -281,6 +265,17 @@ namespace DesignOnPanel
         }
         private void button3_Click(object sender, EventArgs e)
         {
+            Sumav();
+            Resta();
+            Punto();
+            PorCruz();
+            Escalar();
+            
+      
+
+        }
+        private void Sumav()
+        {
             //Suma de vectores formula: A + B = (Xv1 + Xv2, Yv1 + Yv2)
             //xv1;
             //yv1;
@@ -289,11 +284,10 @@ namespace DesignOnPanel
             var x = xv1 + xv2;
             var y = yv1 + yv2;
             txtSuma.Text = "(" + x.ToString() + ", " + y.ToString() + ")";
-      
-
         }
-        private void Resta_Click(object sender, EventArgs e)
+        private void Resta()
         {
+
             //Resta de vectores formula: A - B = (Xv1 - Xv2, Yv1 - Yv2)
             //xv1;
             //yv1;
@@ -302,8 +296,52 @@ namespace DesignOnPanel
             var x = xv1 - xv2;
             var y = yv1 - yv2;
             txtResta.Text = "(" + x.ToString() + ", " + y.ToString() + ")";
+        }
+        private void Punto()
+        {
+
+            //proPunto=(Xv1*XV2)+(Yv1*Yv2)
+            //xv1;
+            //yv1;
+            //xv2;
+            //yv2;
+            var proPunto = (xv1 * xv2) + (yv1 * yv2);
+            txtPunto.Text = proPunto.ToString();
+        }
+        private void PorCruz()
+        {
+
+            //Producto por Cruz Formula: Z =[(Xv1 * YV2) - (XV2 * YV1)]
+            //xv1;
+            //yv1;
+            //xv2;
+            //yv2;
+            var z= (xv1 * yv2 ) + (xv2* yv1);
+            txtCruz.Text = "(0, 0, " + z.ToString()+" k)";
 
         }
+        private void Escalar()
+        {
+            var escalaV1 = float.Parse(txtEscalarv1.Text);
+            var escalaV2 = float.Parse(txtEscalarv2.Text);
+            //Producto escalar fromula:Producto por escalar
+            //Escalax1 = escalaV1 * Xv1
+            //    Escalay1 = escalaV1 * Yv1
+            //    Escalax2 = escalaV2 * Xv2
+            //    Escalay2 = escalaV2 * Yv2
+            var escalax1 = escalaV1 * xv1;
+            var escalay1 = escalaV1 * yv1;
+            var escalax2 = escalaV2 * xv2;
+            var escalay2 = escalaV2 * yv2;
+            txtV1Escalar.Text = "(" + escalax1.ToString() + ", " + escalay1.ToString() + ")";
+            txtV2Escalar.Text = "(" + escalax2.ToString() + ", " + escalay2.ToString() + ")";
+
+        }
+        private void Resta_Click(object sender, EventArgs e)
+        {
+
+        }
+        
         private void Formulas_Click(object sender, EventArgs e)
         {
             
@@ -358,6 +396,9 @@ namespace DesignOnPanel
 
         }
 
-        
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
