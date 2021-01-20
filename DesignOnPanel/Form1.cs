@@ -80,6 +80,20 @@ namespace DesignOnPanel
             
         }
 
+        public void borrarVector(Vector vector, Graphics graphics)
+        {​​​​​
+            Pen redPen = new Pen(Color.White, 1);
+
+            var x1 = ObtenerValorEnX(vector.Punto1.X / 10);
+            var y1 = ObtenerValorEnY(vector.Punto1.Y / 10);
+
+            var x2 = ObtenerValorEnX(vector.Punto2.X / 10);
+            var y2 = ObtenerValorEnY(vector.Punto2.Y / 10);
+
+            graphics.DrawLine(redPen, x1, y1, x2, y2);
+
+        }​​​​​
+
         private float ObtenerValorEnX(float valor)
         {
             var anchoContenedor = float.Parse(pnVectorContenedor.Width.ToString());
@@ -183,10 +197,11 @@ namespace DesignOnPanel
        
         private void button2_Click(object sender, EventArgs e)
         {
-            TxtManoIzquierdaX.Text = "";
-            TxtManoIzquierdaY.Text = "";
-            TxtManoDerechaX.Text = "";
-            TxtManoDerechaY.Text = "";
+            Graphics graphics = pnVectorContenedor.CreateGraphics();
+            TxtManoIzquierdaX.Text = "0";
+            TxtManoIzquierdaY.Text = "0";
+            TxtManoDerechaX.Text = "0";
+            TxtManoDerechaY.Text = "0";
             v1.Text = "";
             txtMagnitud.Text = "";
             txtDireccion.Text = "";
@@ -198,8 +213,13 @@ namespace DesignOnPanel
             Compov2.Text = "";
             txtSuma.Text = " ";
             txtResta.Text = "";
+            foreach (var vector in Vectores)
+            {​​​​​
+                borrarVector(vector, graphics);
+            }​​​​​
+            Vectores.Clear();
 
-             
+
         }
 
 
