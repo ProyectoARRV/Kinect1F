@@ -65,10 +65,30 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtResta = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.ProducCruz = new System.Windows.Forms.Button();
+            this.ProducPunto = new System.Windows.Forms.Button();
+            this.txtCruz = new System.Windows.Forms.TextBox();
+            this.ProducC = new System.Windows.Forms.Label();
+            this.txtPunto = new System.Windows.Forms.TextBox();
+            this.ProductoP = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtEscalarv1 = new System.Windows.Forms.TextBox();
+            this.txtEscalarv2 = new System.Windows.Forms.TextBox();
+            this.txtV2Escalar = new System.Windows.Forms.TextBox();
+            this.txtV1Escalar = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.Formulas = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnVectorContenedor.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnVectorContenedor
             // 
+            this.pnVectorContenedor.Controls.Add(this.panel1);
             this.pnVectorContenedor.Location = new System.Drawing.Point(14, 31);
             this.pnVectorContenedor.Name = "pnVectorContenedor";
             this.pnVectorContenedor.Size = new System.Drawing.Size(572, 426);
@@ -111,7 +131,7 @@
             // lblManoDerechaX
             // 
             this.lblManoDerechaX.AutoSize = true;
-            this.lblManoDerechaX.Location = new System.Drawing.Point(609, 142);
+            this.lblManoDerechaX.Location = new System.Drawing.Point(609, 140);
             this.lblManoDerechaX.Name = "lblManoDerechaX";
             this.lblManoDerechaX.Size = new System.Drawing.Size(103, 15);
             this.lblManoDerechaX.TabIndex = 7;
@@ -119,7 +139,7 @@
             // 
             // TxtManoDerechaX
             // 
-            this.TxtManoDerechaX.Location = new System.Drawing.Point(744, 138);
+            this.TxtManoDerechaX.Location = new System.Drawing.Point(744, 136);
             this.TxtManoDerechaX.Name = "TxtManoDerechaX";
             this.TxtManoDerechaX.Size = new System.Drawing.Size(116, 22);
             this.TxtManoDerechaX.TabIndex = 6;
@@ -127,7 +147,7 @@
             // lblManoDerechaY
             // 
             this.lblManoDerechaY.AutoSize = true;
-            this.lblManoDerechaY.Location = new System.Drawing.Point(609, 172);
+            this.lblManoDerechaY.Location = new System.Drawing.Point(609, 170);
             this.lblManoDerechaY.Name = "lblManoDerechaY";
             this.lblManoDerechaY.Size = new System.Drawing.Size(101, 15);
             this.lblManoDerechaY.TabIndex = 9;
@@ -135,14 +155,14 @@
             // 
             // TxtManoDerechaY
             // 
-            this.TxtManoDerechaY.Location = new System.Drawing.Point(744, 168);
+            this.TxtManoDerechaY.Location = new System.Drawing.Point(744, 166);
             this.TxtManoDerechaY.Name = "TxtManoDerechaY";
             this.TxtManoDerechaY.Size = new System.Drawing.Size(116, 22);
             this.TxtManoDerechaY.TabIndex = 8;
             // 
             // btnCrearVector
             // 
-            this.btnCrearVector.Location = new System.Drawing.Point(613, 215);
+            this.btnCrearVector.Location = new System.Drawing.Point(612, 204);
             this.btnCrearVector.Name = "btnCrearVector";
             this.btnCrearVector.Size = new System.Drawing.Size(249, 27);
             this.btnCrearVector.TabIndex = 14;
@@ -152,7 +172,7 @@
             // 
             // btnGuardarVector
             // 
-            this.btnGuardarVector.Location = new System.Drawing.Point(613, 250);
+            this.btnGuardarVector.Location = new System.Drawing.Point(612, 239);
             this.btnGuardarVector.Name = "btnGuardarVector";
             this.btnGuardarVector.Size = new System.Drawing.Size(249, 27);
             this.btnGuardarVector.TabIndex = 15;
@@ -173,7 +193,7 @@
             // Punto2
             // 
             this.Punto2.AutoSize = true;
-            this.Punto2.Location = new System.Drawing.Point(609, 115);
+            this.Punto2.Location = new System.Drawing.Point(609, 113);
             this.Punto2.Name = "Punto2";
             this.Punto2.Size = new System.Drawing.Size(50, 15);
             this.Punto2.TabIndex = 17;
@@ -201,13 +221,14 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(613, 316);
+            this.button2.Location = new System.Drawing.Point(179, 470);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(249, 27);
             this.button2.TabIndex = 23;
             this.button2.Text = "Reiniciar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Paint += new System.Windows.Forms.PaintEventHandler(this.button2_Paint);
             // 
             // txtDireccion
             // 
@@ -227,7 +248,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(613, 283);
+            this.button1.Location = new System.Drawing.Point(612, 272);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(249, 27);
             this.button1.TabIndex = 20;
@@ -305,7 +326,7 @@
             // 
             // Suma
             // 
-            this.Suma.Location = new System.Drawing.Point(613, 356);
+            this.Suma.Location = new System.Drawing.Point(612, 307);
             this.Suma.Name = "Suma";
             this.Suma.Size = new System.Drawing.Size(249, 27);
             this.Suma.TabIndex = 34;
@@ -315,7 +336,7 @@
             // 
             // Resta
             // 
-            this.Resta.Location = new System.Drawing.Point(613, 391);
+            this.Resta.Location = new System.Drawing.Point(611, 341);
             this.Resta.Name = "Resta";
             this.Resta.Size = new System.Drawing.Size(249, 27);
             this.Resta.TabIndex = 35;
@@ -378,6 +399,7 @@
             this.txtResta.Name = "txtResta";
             this.txtResta.Size = new System.Drawing.Size(116, 22);
             this.txtResta.TabIndex = 44;
+            this.txtResta.TextChanged += new System.EventHandler(this.txtResta_TextChanged);
             // 
             // label8
             // 
@@ -387,12 +409,186 @@
             this.label8.Size = new System.Drawing.Size(101, 15);
             this.label8.TabIndex = 43;
             this.label8.Text = "Resta de vectores";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // ProducCruz
+            // 
+            this.ProducCruz.Location = new System.Drawing.Point(611, 407);
+            this.ProducCruz.Name = "ProducCruz";
+            this.ProducCruz.Size = new System.Drawing.Size(249, 27);
+            this.ProducCruz.TabIndex = 46;
+            this.ProducCruz.Text = "Calcular Producto Cruz";
+            this.ProducCruz.UseVisualStyleBackColor = true;
+            // 
+            // ProducPunto
+            // 
+            this.ProducPunto.Location = new System.Drawing.Point(610, 374);
+            this.ProducPunto.Name = "ProducPunto";
+            this.ProducPunto.Size = new System.Drawing.Size(249, 27);
+            this.ProducPunto.TabIndex = 45;
+            this.ProducPunto.Text = "Calcular Producto Punto";
+            this.ProducPunto.UseVisualStyleBackColor = true;
+            // 
+            // txtCruz
+            // 
+            this.txtCruz.Location = new System.Drawing.Point(1020, 377);
+            this.txtCruz.Name = "txtCruz";
+            this.txtCruz.Size = new System.Drawing.Size(116, 22);
+            this.txtCruz.TabIndex = 50;
+            // 
+            // ProducC
+            // 
+            this.ProducC.AutoSize = true;
+            this.ProducC.Location = new System.Drawing.Point(907, 380);
+            this.ProducC.Name = "ProducC";
+            this.ProducC.Size = new System.Drawing.Size(87, 15);
+            this.ProducC.TabIndex = 49;
+            this.ProducC.Text = "Producto Cruz";
+            // 
+            // txtPunto
+            // 
+            this.txtPunto.Location = new System.Drawing.Point(1020, 349);
+            this.txtPunto.Name = "txtPunto";
+            this.txtPunto.Size = new System.Drawing.Size(116, 22);
+            this.txtPunto.TabIndex = 48;
+            // 
+            // ProductoP
+            // 
+            this.ProductoP.AutoSize = true;
+            this.ProductoP.Location = new System.Drawing.Point(907, 352);
+            this.ProductoP.Name = "ProductoP";
+            this.ProductoP.Size = new System.Drawing.Size(94, 15);
+            this.ProductoP.TabIndex = 47;
+            this.ProductoP.Text = "Producto Punto";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(893, 473);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 15);
+            this.label9.TabIndex = 51;
+            this.label9.Text = "Escalar Vector 2";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(893, 448);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(100, 15);
+            this.label10.TabIndex = 52;
+            this.label10.Text = "Escalar Vector 1 ";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(1053, 448);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(16, 15);
+            this.label11.TabIndex = 53;
+            this.label11.Text = "=";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(1053, 473);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(16, 15);
+            this.label12.TabIndex = 54;
+            this.label12.Text = "=";
+            // 
+            // txtEscalarv1
+            // 
+            this.txtEscalarv1.Location = new System.Drawing.Point(997, 445);
+            this.txtEscalarv1.Name = "txtEscalarv1";
+            this.txtEscalarv1.Size = new System.Drawing.Size(49, 22);
+            this.txtEscalarv1.TabIndex = 55;
+            // 
+            // txtEscalarv2
+            // 
+            this.txtEscalarv2.Location = new System.Drawing.Point(996, 473);
+            this.txtEscalarv2.Name = "txtEscalarv2";
+            this.txtEscalarv2.Size = new System.Drawing.Size(49, 22);
+            this.txtEscalarv2.TabIndex = 56;
+            // 
+            // txtV2Escalar
+            // 
+            this.txtV2Escalar.Location = new System.Drawing.Point(1075, 473);
+            this.txtV2Escalar.Name = "txtV2Escalar";
+            this.txtV2Escalar.Size = new System.Drawing.Size(116, 22);
+            this.txtV2Escalar.TabIndex = 58;
+            // 
+            // txtV1Escalar
+            // 
+            this.txtV1Escalar.Location = new System.Drawing.Point(1075, 445);
+            this.txtV1Escalar.Name = "txtV1Escalar";
+            this.txtV1Escalar.Size = new System.Drawing.Size(116, 22);
+            this.txtV1Escalar.TabIndex = 57;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(981, 414);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(126, 15);
+            this.label13.TabIndex = 59;
+            this.label13.Text = "Producto Por Escalar";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(612, 440);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(249, 27);
+            this.button3.TabIndex = 60;
+            this.button3.Text = "Calcular Producto Por Escalar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // Formulas
+            // 
+            this.Formulas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Formulas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Formulas.Location = new System.Drawing.Point(611, 479);
+            this.Formulas.Name = "Formulas";
+            this.Formulas.Size = new System.Drawing.Size(249, 27);
+            this.Formulas.TabIndex = 61;
+            this.Formulas.Text = "Formulas";
+            this.Formulas.UseVisualStyleBackColor = true;
+            this.Formulas.Click += new System.EventHandler(this.Formulas_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::DesignOnPanel.Properties.Resources.carro2;
+            this.panel1.Location = new System.Drawing.Point(222, 119);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(350, 364);
+            this.panel1.TabIndex = 62;
+            this.panel1.Visible = false;
+            this.panel1.Click += new System.EventHandler(this.Formulas_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1203, 518);
+            this.Controls.Add(this.Formulas);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.txtV2Escalar);
+            this.Controls.Add(this.txtV1Escalar);
+            this.Controls.Add(this.txtEscalarv2);
+            this.Controls.Add(this.txtEscalarv1);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtCruz);
+            this.Controls.Add(this.ProducC);
+            this.Controls.Add(this.txtPunto);
+            this.Controls.Add(this.ProductoP);
+            this.Controls.Add(this.ProducCruz);
+            this.Controls.Add(this.ProducPunto);
             this.Controls.Add(this.txtResta);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtSuma);
@@ -434,6 +630,7 @@
             this.Name = "Form1";
             this.Text = "Kinect-Vectores";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.pnVectorContenedor.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -477,6 +674,24 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtResta;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button ProducCruz;
+        private System.Windows.Forms.Button ProducPunto;
+        private System.Windows.Forms.TextBox txtCruz;
+        private System.Windows.Forms.Label ProducC;
+        private System.Windows.Forms.TextBox txtPunto;
+        private System.Windows.Forms.Label ProductoP;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtEscalarv1;
+        private System.Windows.Forms.TextBox txtEscalarv2;
+        private System.Windows.Forms.TextBox txtV2Escalar;
+        private System.Windows.Forms.TextBox txtV1Escalar;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Formulas;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

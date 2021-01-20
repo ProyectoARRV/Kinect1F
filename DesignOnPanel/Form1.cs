@@ -36,8 +36,9 @@ namespace DesignOnPanel
             pnVectorContenedor.Invalidate(); // esta linea la tienen que llamar cada vez que los joints/skelton valores cambien
         }
 
-        private void pnVectorContenedor_Paint(object sender, PaintEventArgs e)
+        public void pnVectorContenedor_Paint(object sender, PaintEventArgs e)
         {
+            
             Pen bluePen = new Pen(Color.Blue, 1);
 
             Graphics graphics = pnVectorContenedor.CreateGraphics();
@@ -52,10 +53,12 @@ namespace DesignOnPanel
             foreach (var vector in Vectores)
             {
                 DibujaVector(vector, graphics);
+                
             }
 
             //Dibuja el vector actual
             DibujarVectorActual(graphics);
+           
         }
 
         private void DibujarVectorActual(Graphics graphics)
@@ -195,10 +198,11 @@ namespace DesignOnPanel
             Compov2.Text = "";
             txtSuma.Text = " ";
             txtResta.Text = "";
-      
+
+             
         }
 
-        
+
 
         private void Calcular()
         {
@@ -280,7 +284,10 @@ namespace DesignOnPanel
             txtResta.Text = "(" + x.ToString() + ", " + y.ToString() + ")";
 
         }
-
+        private void Formulas_Click(object sender, EventArgs e)
+        {
+            
+        }
         private void txtDireccion_TextChanged(object sender, EventArgs e)
         {
 
@@ -305,5 +312,32 @@ namespace DesignOnPanel
         {
             
         }
+
+        private void txtResta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        
     }
 }
