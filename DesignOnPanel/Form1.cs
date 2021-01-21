@@ -29,6 +29,23 @@ namespace DesignOnPanel
             TxtManoIzquierdaY.Text = "0";
             TxtManoDerechaX.Text = "0";
             TxtManoDerechaY.Text = "0";
+            v1.Text = "0";
+            txtMagnitud.Text = "0";
+            txtDireccion.Text = "0";
+            v2.Text = "0";
+            txtMagnitud2.Text = "0";
+            txtDireccion2.Text = "0";
+            contador = 0;
+            Compov1.Text = "0";
+            Compov2.Text = "0";
+            txtSuma.Text = "0";
+            txtResta.Text = "0";
+            txtCruz.Text = "0";
+            txtEscalarv1.Text = "0";
+            txtEscalarv2.Text = "0";
+            txtPunto.Text = "0";
+            txtV1Escalar.Text = "0";
+            txtV2Escalar.Text = "0";
         }
 
         private void btnCrearVector_Click(object sender, EventArgs e)
@@ -201,6 +218,14 @@ namespace DesignOnPanel
             Compov2.Text = "";
             txtSuma.Text = " ";
             txtResta.Text = "";
+            txtCruz.Text = "";
+            txtEscalarv1.Text = "";
+            txtEscalarv2.Text = "";
+            txtPunto.Text = "";
+            txtV1Escalar.Text = "";
+            txtV2Escalar.Text = "";
+
+
             
 
 
@@ -317,22 +342,22 @@ namespace DesignOnPanel
             //xv2;
             //yv2;
             var z= (xv1 * yv2 ) + (xv2* yv1);
-            txtCruz.Text = "(0, 0, " + z.ToString()+" k)";
+            txtCruz.Text = "(0, 0, " + z.ToString()+" )k";
 
         }
         private void Escalar()
         {
-            var escalaV1 = float.Parse(txtEscalarv1.Text);
-            var escalaV2 = float.Parse(txtEscalarv2.Text);
+            float escalaV1 = float.Parse(txtEscalarv1.Text);
+            float escalaV2 = float.Parse(txtEscalarv2.Text);
             //Producto escalar fromula:Producto por escalar
             //Escalax1 = escalaV1 * Xv1
             //    Escalay1 = escalaV1 * Yv1
             //    Escalax2 = escalaV2 * Xv2
             //    Escalay2 = escalaV2 * Yv2
-            var escalax1 = escalaV1 * xv1;
-            var escalay1 = escalaV1 * yv1;
-            var escalax2 = escalaV2 * xv2;
-            var escalay2 = escalaV2 * yv2;
+            float escalax1 = escalaV1 * xv1;
+            float escalay1 = escalaV1 * yv1;
+            float escalax2 = escalaV2 * xv2;
+            float escalay2 = escalaV2 * yv2;
             txtV1Escalar.Text = "(" + escalax1.ToString() + ", " + escalay1.ToString() + ")";
             txtV2Escalar.Text = "(" + escalax2.ToString() + ", " + escalay2.ToString() + ")";
 

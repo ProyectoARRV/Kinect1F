@@ -79,6 +79,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.formulas = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // pnVectorContenedor
@@ -362,7 +363,7 @@
             // 
             // txtSuma
             // 
-            this.txtSuma.Location = new System.Drawing.Point(727, 360);
+            this.txtSuma.Location = new System.Drawing.Point(744, 476);
             this.txtSuma.Name = "txtSuma";
             this.txtSuma.Size = new System.Drawing.Size(116, 22);
             this.txtSuma.TabIndex = 42;
@@ -371,7 +372,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(614, 363);
+            this.label7.Location = new System.Drawing.Point(631, 479);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(101, 15);
             this.label7.TabIndex = 41;
@@ -379,7 +380,7 @@
             // 
             // txtResta
             // 
-            this.txtResta.Location = new System.Drawing.Point(727, 389);
+            this.txtResta.Location = new System.Drawing.Point(744, 505);
             this.txtResta.Name = "txtResta";
             this.txtResta.Size = new System.Drawing.Size(116, 22);
             this.txtResta.TabIndex = 44;
@@ -388,7 +389,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(614, 392);
+            this.label8.Location = new System.Drawing.Point(631, 508);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(101, 15);
             this.label8.TabIndex = 43;
@@ -397,7 +398,7 @@
             // 
             // txtCruz
             // 
-            this.txtCruz.Location = new System.Drawing.Point(727, 445);
+            this.txtCruz.Location = new System.Drawing.Point(744, 561);
             this.txtCruz.Name = "txtCruz";
             this.txtCruz.Size = new System.Drawing.Size(116, 22);
             this.txtCruz.TabIndex = 50;
@@ -405,7 +406,7 @@
             // ProducC
             // 
             this.ProducC.AutoSize = true;
-            this.ProducC.Location = new System.Drawing.Point(614, 448);
+            this.ProducC.Location = new System.Drawing.Point(631, 564);
             this.ProducC.Name = "ProducC";
             this.ProducC.Size = new System.Drawing.Size(87, 15);
             this.ProducC.TabIndex = 49;
@@ -413,7 +414,7 @@
             // 
             // txtPunto
             // 
-            this.txtPunto.Location = new System.Drawing.Point(727, 417);
+            this.txtPunto.Location = new System.Drawing.Point(744, 533);
             this.txtPunto.Name = "txtPunto";
             this.txtPunto.Size = new System.Drawing.Size(116, 22);
             this.txtPunto.TabIndex = 48;
@@ -421,7 +422,7 @@
             // ProductoP
             // 
             this.ProductoP.AutoSize = true;
-            this.ProductoP.Location = new System.Drawing.Point(614, 420);
+            this.ProductoP.Location = new System.Drawing.Point(631, 536);
             this.ProductoP.Name = "ProductoP";
             this.ProductoP.Size = new System.Drawing.Size(94, 15);
             this.ProductoP.TabIndex = 47;
@@ -430,7 +431,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(586, 541);
+            this.label9.Location = new System.Drawing.Point(608, 435);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 15);
             this.label9.TabIndex = 51;
@@ -439,7 +440,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(586, 516);
+            this.label10.Location = new System.Drawing.Point(608, 410);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(100, 15);
             this.label10.TabIndex = 52;
@@ -449,7 +450,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(746, 516);
+            this.label11.Location = new System.Drawing.Point(768, 410);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(16, 15);
             this.label11.TabIndex = 53;
@@ -458,7 +459,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(746, 541);
+            this.label12.Location = new System.Drawing.Point(768, 435);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(16, 15);
             this.label12.TabIndex = 54;
@@ -466,28 +467,28 @@
             // 
             // txtEscalarv1
             // 
-            this.txtEscalarv1.Location = new System.Drawing.Point(690, 513);
+            this.txtEscalarv1.Location = new System.Drawing.Point(712, 407);
             this.txtEscalarv1.Name = "txtEscalarv1";
             this.txtEscalarv1.Size = new System.Drawing.Size(49, 22);
             this.txtEscalarv1.TabIndex = 55;
             // 
             // txtEscalarv2
             // 
-            this.txtEscalarv2.Location = new System.Drawing.Point(689, 541);
+            this.txtEscalarv2.Location = new System.Drawing.Point(711, 435);
             this.txtEscalarv2.Name = "txtEscalarv2";
             this.txtEscalarv2.Size = new System.Drawing.Size(49, 22);
             this.txtEscalarv2.TabIndex = 56;
             // 
             // txtV2Escalar
             // 
-            this.txtV2Escalar.Location = new System.Drawing.Point(768, 541);
+            this.txtV2Escalar.Location = new System.Drawing.Point(790, 435);
             this.txtV2Escalar.Name = "txtV2Escalar";
             this.txtV2Escalar.Size = new System.Drawing.Size(116, 22);
             this.txtV2Escalar.TabIndex = 58;
             // 
             // txtV1Escalar
             // 
-            this.txtV1Escalar.Location = new System.Drawing.Point(768, 513);
+            this.txtV1Escalar.Location = new System.Drawing.Point(790, 407);
             this.txtV1Escalar.Name = "txtV1Escalar";
             this.txtV1Escalar.Size = new System.Drawing.Size(116, 22);
             this.txtV1Escalar.TabIndex = 57;
@@ -495,7 +496,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(674, 482);
+            this.label13.Location = new System.Drawing.Point(694, 360);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(126, 15);
             this.label13.TabIndex = 59;
@@ -526,11 +527,21 @@
             this.formulas.UseVisualStyleBackColor = true;
             this.formulas.Click += new System.EventHandler(this.Formulas_Click);
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(608, 384);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(201, 15);
+            this.label15.TabIndex = 63;
+            this.label15.Text = "*Ingresa el escalar de los vectores*";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1203, 630);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.formulas);
             this.Controls.Add(this.label13);
@@ -643,6 +654,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button formulas;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }
 
